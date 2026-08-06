@@ -1,0 +1,4 @@
+# BLOQUEIO TEMPORÁRIO DE INDEXAÇÃO
+# Alterar antes da publicação oficial.
+User-agent: *
+Disallow: /

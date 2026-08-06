@@ -1,0 +1,27 @@
+{
+  "name": "Aitak Odontologia",
+  "short_name": "Aitak",
+  "description": "Clínica odontológica em Sorocaba com atendimento humanizado e cuidado completo para o seu sorriso.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4FBF6",
+  "theme_color": "#063E31",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
