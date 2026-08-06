@@ -26,11 +26,16 @@ export function sites(): Plugin {
     },
     async closeBundle() {
       const outputDirectory = resolve(root, "dist", ".openai");
-      const hostingConfig = resolve(root, ".openai", "hosting.json");
+      const primaryHostingConfig = resolve(root, ".openai", "hosting.json");
+      const fallbackHostingConfig = resolve(root, "config", "hosting.json");
       const drizzleSource = resolve(root, "drizzle");
 
       await rm(outputDirectory, { recursive: true, force: true });
       await mkdir(outputDirectory, { recursive: true });
+
+      const hostingConfig = (await exists(primaryHostingConfig))
+        ? primaryHostingConfig
+        : fallbackHostingConfig;
 
       if (await exists(hostingConfig)) {
         await cp(hostingConfig, resolve(outputDirectory, "hosting.json"));

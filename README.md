@@ -160,3 +160,15 @@ O `.gitignore` exclui dependências, builds, caches, logs, credenciais e arquivo
 ## Privacidade e cookies
 
 As rotas de Política de Privacidade e Política de Cookies permanecem com `noindex`. Antes da publicação oficial, os textos jurídicos devem ser revisados e aprovados por profissional responsável e ajustados às integrações efetivamente utilizadas pelo site.
+
+## Deploy no Cloudflare Workers
+
+Configuração recomendada ao conectar este repositório à Cloudflare:
+
+```text
+Comando de build: npm run build
+Comando de implantação: npx wrangler deploy
+Diretório raiz: /
+```
+
+O projeto inclui `config/hosting.json` como cópia de segurança do manifesto. Assim, o build continua funcionando mesmo quando um upload feito pelo navegador não inclui a pasta oculta `.openai`. Os scripts de build também são chamados explicitamente com `bash`, evitando falhas de permissão quando o GitHub não preserva o bit executável dos arquivos `.sh`.
