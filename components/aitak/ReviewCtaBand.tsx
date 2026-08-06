@@ -1,6 +1,6 @@
 import Icon from "./Icon";
 import { WHATSAPP_SCHEDULE_URL } from "./constants";
-import { REVIEW_WRITE_URL_PLACEHOLDER } from "./testimonials";
+import { REVIEW_WRITE_URL } from "./testimonials";
 
 export default function ReviewCtaBand() {
   return <div className="review-cta-band">
@@ -10,7 +10,7 @@ export default function ReviewCtaBand() {
     </div>
     <div className="review-cta-actions">
       <a className="review-cta-primary" href={WHATSAPP_SCHEDULE_URL} target="_blank" rel="noopener noreferrer" aria-label="Agendar avaliação na Aitak Odontologia pelo WhatsApp"><Icon name="calendar" />Agendar avaliação</a>
-      <a className="review-cta-secondary" href={REVIEW_WRITE_URL_PLACEHOLDER} target="_blank" rel="noopener noreferrer" aria-label="Conte-nos sua experiência escrevendo uma avaliação no Google" data-review-url-pending="true">
+      <a className="review-cta-secondary" href={REVIEW_WRITE_URL} target="_blank" rel="noopener noreferrer" aria-label="Conte-nos sua experiência escrevendo uma avaliação no Google">
         <Icon name="writing" size={25} />
         Conte-nos sua experiência
       </a>

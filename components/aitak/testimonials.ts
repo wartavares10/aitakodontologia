@@ -44,5 +44,4 @@ export const TESTIMONIALS: TestimonialData[] = [
   },
 ];
 
-// TODO: substituir pelo link direto de escrita de avaliação fornecido pela clínica.
-export const REVIEW_WRITE_URL_PLACEHOLDER = "https://search.google.com/local/writereview?placeid=REVIEW_WRITE_URL_PLACEHOLDER";
+export const REVIEW_WRITE_URL = "https://search.google.com/local/writereview?placeid=ChIJQVGWjceLxZQRVEKjluYET9U";

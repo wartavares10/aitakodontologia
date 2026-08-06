@@ -9,7 +9,7 @@ export default function FaqContactBand() {
       </span>
       <div><h3>Ainda tem dúvidas?</h3><p>Nossa equipe está pronta para ajudar.</p></div>
     </div>
-    <p className="faq-contact-copy">Fale com a gente e receba um atendimento próximo, <strong>humano</strong> e sem complicação.</p>
+    <p className="faq-contact-copy"><span>Fale com a gente e receba um atendimento próximo, <strong>humano</strong> e sem complicação.</span></p>
     <a href={FAQ_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" aria-label="Enviar uma dúvida para a Aitak Odontologia pelo WhatsApp">
       <Icon name="whatsapp" size={32} />
       <span>Falar pelo WhatsApp</span><strong aria-hidden="true"><Icon name="arrow-right" size={24} /></strong>
